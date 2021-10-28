@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="albums.css" th:href="@{albums.css}">
 </head>
 <body>
+<h2>My Albums List </h2>
+<div class="form">
+
+    <form method="post" action="/albums">
+        <input type="text" name="albumImgUrl" placeholder="ImageUrl">
+        <input type="text" name="albumTitle" placeholder="Title">
+        <input type="text" name="albumArtist" placeholder="Artist">
+        <input type="number" name="albumSongCount" placeholder="Songs Count">
+        <input type="number" name="albumLength" placeholder="Length">
+        <input type="submit">
+    </form>
+</div>
+
+
 <div class="bigDiv">
-    <div class="card" th:each="album   : ${songs}">
+    <div class="card" th:each="album   : ${allAlbums}">
         <img th:src="${album.imgUrl}" alt="Pic" style="width:100%">
         <div class="container">
             <h4><b>Album: <span th:text="${album.title}"></span></b></h4>
@@ -17,7 +30,5 @@
         </div>
     </div>
 
-</div>
-
-</body>
+</div></body>
 </html>
