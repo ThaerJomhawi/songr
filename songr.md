@@ -22,3 +22,17 @@ Choose run and the app should run the port 8080 and you can see rendered content
 You can test the app from intlliJ by run the written test.
  or use:
 `./gradlew bootRun`  in the terminal
+
+
+
+# Lab 12 
+
+**Feature Tasks**
+
+* A user should be able to add albums to the site.
+
+* Album model can be saved in a database.
+
+
+
+
