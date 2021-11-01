@@ -14,6 +14,9 @@ public class Album {
     private int length;
     private String imgUrl;
 
+    @OneToMany(mappedBy ="album")
+    private List<Song> songs;
+
 
 
     public Album(){
@@ -66,6 +69,14 @@ public class Album {
 
     public void setLength(int length) {
         this.length = length;
+    }
+
+    public List<Song> getSongs() {
+        return songs;
+    }
+
+    public void setSongs(List<Song> songs) {
+        this.songs = songs;
     }
 
 

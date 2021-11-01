@@ -30,6 +30,8 @@
             <p>number of songs: <span th:text="${album.songCount}"></span></p>
             <p>length in seconds: <span th:text="${album.length}"></span></p>
 
+            <button><a th:href="'/albums/'+ ${album.id}">Show Album</a></button>
+
         </div>
     </div>
 
