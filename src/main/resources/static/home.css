@@ -1,3 +1,25 @@
-body {
-background: #F6EABE;
+
+header  {
+display: flex;
+ justify-content: center;
+ margin: auto;
 }
+
+
+body{
+background :#F6EABE;
+item-align: center;
+}
+ div button {
+ padding : 10px;
+ margin: 20%;
+
+ }
+
+footer  {
+display: flex;
+ justify-content: center;
+ margin: auto;
+}
+
+
